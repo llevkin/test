@@ -1,7 +1,7 @@
 ### 1. Что будет выведено в консоль и почему так?
 
 ```js
-setImmediate(() => console.log(3))
+setTimeout(() => console.log(3))
 setTimeout(() => console.log(6), 100);
 console.log(1);
 new Promise(resolve => resolve(5)).then(value => console.log(value));
