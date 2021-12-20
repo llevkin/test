@@ -5,7 +5,6 @@ setImmediate(() => console.log(3))
 setTimeout(() => console.log(6), 100);
 console.log(1);
 new Promise(resolve => resolve(5)).then(value => console.log(value));
-process.nextTick(() => console.log(4));
 ```
 
 ### 2. Что будет выведено в консоль и почему это так?
